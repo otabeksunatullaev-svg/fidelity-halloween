@@ -1,0 +1,34 @@
+/* Сгенерировано из исходника «пригласительный rh.cdr»: точные контуры серых фигур и маркеров списка.
+   Маска задаёт форму, цвет и блик рисуются фоном (см. .shape и .glint в register.css). */
+:root{
+  --m-dots:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2321 429'%3E%3Cpath fill-rule='evenodd' d='M525 22c54-9 66 72 14 81-55 10-68-71-14-81zM510 69c7 24 49 18 42-12-6-26-49-17-42 12zM513 11c-69 24-32 129 38 104 23-8 43-37 33-70-8-25-38-45-71-34zM1169 237c-123 5-124-178-5-180 1 0 1 0 2 0l29 176c-8 2-17 4-26 4zM1654 159l-66-36-66-37 0 73 0 73 66-37 66-36zM2296 217c-124-5-124 178-6 180 1 0 2 0 2 0l29-176c-8-2-16-4-25-4zM1348 209c-122 15-93 194 23 177 47-7 83-47 76-102-6-45-48-82-99-75zM2119 169c20-41 3-91-38-111-13-7-27-9-41-9l7 91c0 0-34-45-56-72-9 7-17 17-22 28-20 41-3 91 38 112 41 20 92 3 112-39zM928 327c11 41 84 31 72-20-11-45-86-29-72 20zM745 227c93-17 114 124 24 139-94 16-117-123-24-139zM725 207c-120 42-56 222 65 179 39-14 74-62 57-120-13-43-66-78-122-59zM1798 283c15-20-4-32-12-40 41-13 77 11 79 49 3 37-28 68-67 62-52-8-55-79-42-76 0 0 24 29 42 5zM1732 313c10 45 49 68 92 60 38-7 71-47 59-94-23-96-176-67-151 34zM121 45c-121 15-92 194 24 177 46-7 83-47 75-102-6-45-47-82-99-75zM127 94c-57 9-38 92 17 78 46-11 32-86-17-78zM349 297c29 0 53 24 53 53 0 29-24 53-53 53-29 0-53-24-53-53 0-29 24-53 53-53z'/%3E%3C/svg%3E");
+  --m-bullet-1:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 243 261'%3E%3Cpath fill-rule='evenodd' d='M39 120c-16-93 125-114 141-24 16 95-125 118-141 24zM120 145c41-11 31-85-20-72-46 10-30 86 20 72zM20 140c42 121 223 57 180-65-15-40-63-75-121-57-43 13-79 66-59 122z'/%3E%3C/svg%3E");
+  --m-bullet-2:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 201 228'%3E%3Cpath fill-rule='evenodd' d='M6 106c16 122 195 93 178-23-7-46-47-83-102-76-45 6-82 48-76 99z'/%3E%3C/svg%3E");
+  --m-bullet-3:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 179 191'%3E%3Cpath fill-rule='evenodd' d='M121 20c-42-20-92-3-112 38-6 13-9 27-8 41l90-7c0 0-45 35-72 56 8 9 17 17 28 22 42 20 92 3 112-38 20-41 3-91-38-112z'/%3E%3C/svg%3E");
+  --m-bullet-4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 227 215'%3E%3Cpath fill-rule='evenodd' d='M115 111c-23-17-37 5-46 15-15-48 12-89 56-92 43-3 78 33 71 77-9 60-91 64-87 49 0-1 33-28 6-49zM149 187c52-12 78-56 69-106-8-43-54-81-108-68-110 27-77 202 39 174z'/%3E%3C/svg%3E");
+  --m-bullet-5:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 201 228'%3E%3Cpath fill-rule='evenodd' d='M6 106c16 122 195 93 178-23-7-46-47-83-102-76-45 6-82 48-76 99zM56 101c9 57 91 37 78-17-11-46-86-32-78 17z'/%3E%3C/svg%3E");
+  --m-lid-a:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2609 2307'%3E%3Cpath fill-rule='evenodd' d='M2609 1447l-2021-1447c-588 821 1405 2307 2021 1447zM557 324l1830 1042c-519 434-1946-445-1830-1042zM1586 978c287 36 219 461-56 420-110-17-196-111-179-241 14-107 113-194 235-179z'/%3E%3C/svg%3E");
+  --m-lid-b:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1970 1742'%3E%3Cpath fill-rule='evenodd' d='M1970 650l-1526 1092c-444-620 1061-1742 1526-1092zM421 1498l1381-787c-392-328-1469 336-1381 787zM1261 885c-20-83-91-125-172-110-69 12-130 86-109 173 43 178 326 124 281-63zM1138 941c-28 36 8 58 23 74-77 24-143-21-147-91-5-69 53-125 123-114 98 14 103 146 79 140 0 0-44-53-78-9z'/%3E%3C/svg%3E");
+  --m-lid-c:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2789 2467'%3E%3Cpath fill-rule='evenodd' d='M0 1547l2161-1547c628 878-1502 2467-2161 1547zM2194 346l-1956 1114c555 464 2080-475 1956-1114zM1523 1258c123-20 206-137 186-260-7-38-22-73-45-101l-188 157c0 0 43-147 69-236-30-9-63-11-96-5-123 20-206 137-185 260 20 122 136 206 259 185z'/%3E%3C/svg%3E");
+  --m-half-a:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 548 678'%3E%3Cpath fill-rule='evenodd' d='M455 661c-453 17-455-655-20-661 2 0 5 0 8 0l105 644c-29 10-60 16-93 17z'/%3E%3C/svg%3E");
+  --m-tri:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 686 757'%3E%3Cpath fill-rule='evenodd' d='M686 378l-343-189-343-189 0 378 0 379 343-190 343-189z'/%3E%3C/svg%3E");
+  --m-half-b:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 592 732'%3E%3Cpath fill-rule='evenodd' d='M491 18c-489-18-491 708-21 714 3 0 6 0 8 0l115-696c-32-10-66-16-102-18z'/%3E%3C/svg%3E");
+  --m-cut:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 809 762'%3E%3Cpath fill-rule='evenodd' d='M723 513c86-176 14-388-162-475-55-27-114-38-171-36l30 385c0 0-148-190-239-305-39 31-71 71-95 119-86 175-13 388 162 474 176 87 389 14 475-162z'/%3E%3C/svg%3E");
+  --m-dot:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 417 452'%3E%3Cpath fill-rule='evenodd' d='M58 279c48 173 359 128 307-87-46-192-365-124-307 87z'/%3E%3C/svg%3E");
+  --m-ring:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 722 672'%3E%3Cpath fill-rule='evenodd' d='M335 54c-335 117-157 618 179 499 111-40 208-175 159-335-36-119-182-218-338-164zM389 108c260-46 318 346 68 389-264 45-327-343-68-389z'/%3E%3C/svg%3E");
+}
+.shape--dots{--m:var(--m-dots);aspect-ratio:5.4101}
+.shape--bullet-1{--m:var(--m-bullet-1);aspect-ratio:0.9301}
+.shape--bullet-2{--m:var(--m-bullet-2);aspect-ratio:0.8827}
+.shape--bullet-3{--m:var(--m-bullet-3);aspect-ratio:0.9409}
+.shape--bullet-4{--m:var(--m-bullet-4);aspect-ratio:1.0525}
+.shape--bullet-5{--m:var(--m-bullet-5);aspect-ratio:0.8827}
+.shape--lid-a{--m:var(--m-lid-a);aspect-ratio:1.1306}
+.shape--lid-b{--m:var(--m-lid-b);aspect-ratio:1.1306}
+.shape--lid-c{--m:var(--m-lid-c);aspect-ratio:1.1306}
+.shape--half-a{--m:var(--m-half-a);aspect-ratio:0.8089}
+.shape--tri{--m:var(--m-tri);aspect-ratio:0.9073}
+.shape--half-b{--m:var(--m-half-b);aspect-ratio:0.8090}
+.shape--cut{--m:var(--m-cut);aspect-ratio:1.0628}
+.shape--dot{--m:var(--m-dot);aspect-ratio:0.9216}
+.shape--ring{--m:var(--m-ring);aspect-ratio:1.0752}

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Регистрация / Fidelity Halloween Party</title>
+<meta name="description" content="Fidelity Halloween Party: 29 октября, 19:30, Nukus 89. Регистрация гостей.">
+<meta name="theme-color" content="#141615">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fidelity Halloween Party">
+<meta property="og:description" content="29 октября, 19:30, Nukus 89. Впишите себя в список гостей.">
+<script>/* Включает анимации появления. Если основной JS не загрузится, через 1.8 с всё равно показываем контент */
+(function(d){d.classList.add('fdl-js');setTimeout(function(){d.classList.add('fdl-ready')},1800)})(document.documentElement)</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<link rel="preload" as="image" href="assets/poster/title.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/shapes.css">
+<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<!-- Вся страница внутри .fdl: стили ограничены этим контейнером -->
+<div class="fdl">
+<div class="grain" aria-hidden="true"></div>
+
+<main>
+  <!-- 1. Левый постер пригласительного. Все надписи, логотип и черепа взяты из исходника «пригласительный rh.cdr».
+       --l, --t, --w: положение и ширина элемента в процентах от постера (для десктопа, где постер собран один в один);
+       --mm: ширина в миллиметрах макета (для телефона, где элементы идут столбиком в том же масштабе). -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__stage">
+      <div class="hero__head">
+        <img class="pp pp--logo intro" style="--i:0;--l:18.49;--t:5.81;--w:12.67;--mm:26.6" src="assets/poster/logo.svg" width="2661" height="1289" alt="Fidelity">
+        <i class="pp pp--dots shape shape--dots glint intro" style="--i:0;--l:19.19;--t:16.51;--w:11.05;--mm:23.2" aria-hidden="true"></i>
+        <h1 class="pp pp--title" id="hero-title" style="--l:4.12;--t:21.40;--w:40.04;--mm:84.1">
+          <span class="sr-only">Fidelity </span><img class="brush" src="assets/poster/title.webp" width="1346" height="589" alt="Halloween Party">
+        </h1>
+        <div class="hero__when">
+          <!-- Череп привязан к блоку с датой: на телефоне его подбородок стоит на уровне последней строки дресс-кода -->
+          <div class="hero__art" aria-hidden="true">
+            <img class="hero__skull intro" style="--i:2" src="assets/skull-1100.webp" srcset="assets/skull-640.webp 640w, assets/skull-1100.webp 1100w" sizes="(min-width: 900px) 60vw, 90vw" width="1100" height="1369" alt="" fetchpriority="high">
+          </div>
+          <p class="pp pp--date intro" style="--i:3;--l:66.78;--t:82.98;--w:17.75;--mm:37.3"><img src="assets/poster/date.svg" width="3728" height="1133" alt="29 октября, 19:30, Nukus 89"></p>
+          <p class="pp pp--dress intro" style="--i:4;--l:66.83;--t:92.06;--w:29.05;--mm:61">
+            <img class="v-poster" src="assets/poster/dress.svg" width="6101" height="577" alt="Дресс-код: костюмы на Хэллоуин; одежда в чёрном, красном цветах.">
+            <span class="v-flow"><i class="marker" aria-hidden="true"></i>Дресс-код: костюмы на Хэллоуин; одежда в чёрном, красном цветах.</span>
+          </p>
+        </div>
+        <a class="scroll-cue intro" style="--i:5" href="#register" aria-label="Листайте вниз к регистрации">
+          <span class="scroll-cue__label">Листайте</span>
+          <i class="shape shape--tri scroll-cue__arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Легенда. На десктопе это точные кривые из макета (img), на телефоне тот же текст обычным HTML,
+           потому что мелкий текст постера на узком экране был бы 9-10 px. Показывается только одна из версий. -->
+      <div class="hero__story">
+        <p class="pp pp--intro" data-reveal style="--l:9.16;--t:50.45;--w:31.23;--mm:65.6">
+          <img class="v-poster" src="assets/poster/intro.svg" width="6558" height="1097" alt="Говорят, самые страшные истории рассказывают не призраки, и даже не ведьмы, и не вампиры…">
+          <span class="v-flow">Говорят, самые страшные истории рассказывают не&nbsp;призраки, и даже не ведьмы, и&nbsp;не&nbsp;вампиры…</span>
+        </p>
+        <p class="pp pp--caps" data-reveal style="--l:4.12;--t:60.95;--w:41.32;--mm:86.8"><img src="assets/poster/caps.svg" width="8678" height="655" alt="Самые страшные истории рассказывают маркетологи после второго бокала."></p>
+        <div class="pp pp--list" data-reveal style="--l:3.92;--t:69.30;--w:42.04;--mm:88.3">
+          <img class="v-poster" src="assets/poster/list.svg" width="8828" height="2464" alt="Старинные рукописи Fidelity гласят, что в последний четверг октября 2026 года соберутся те, кто: управляет бюджетами; принимает решения; создает бренды; влияет на рынок; знает цену сильным идеям и дорогим ошибкам.">
+          <div class="v-flow">
+            <p>Старинные рукописи Fidelity гласят, что в&nbsp;последний четверг октября 2026&nbsp;года соберутся те, кто:</p>
+            <ul class="bullets">
+              <li><i class="shape shape--bullet-3" aria-hidden="true"></i>управляет бюджетами;</li>
+              <li><i class="shape shape--bullet-2" aria-hidden="true"></i>принимает решения;</li>
+              <li><i class="shape shape--bullet-5" aria-hidden="true"></i>создает бренды;</li>
+              <li><i class="shape shape--bullet-4" aria-hidden="true"></i>влияет на рынок;</li>
+              <li><i class="shape shape--bullet-1" aria-hidden="true"></i>знает цену сильным идеям и дорогим ошибкам.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="pp pp--outro" data-reveal style="--l:4.12;--t:88.94;--w:55.26;--mm:116">
+          <img class="v-poster" src="assets/poster/outro.svg" width="11604" height="342" alt="Они обменяются историями и найдут новые знакомства…">
+          <span class="v-flow">Они обменяются историями и найдут новые знакомства…</span>
+        </p>
+        <p class="pp pp--hand" data-reveal style="--l:4.12;--t:92.32;--w:23.23;--mm:48.8"><img src="assets/poster/hand.svg" width="4879" height="538" alt="Среди них будете и вы."></p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 2. Правый постер, продолжение первого экрана без разделителя. Черепа и серые фигуры по макету:
+       --cx, --cy: центр в процентах от постера, --w: ширина в процентах; --a: к какому краю блока привязан ряд
+       (0 верх, .5 середина, 1 низ), так ряды не наезжают на форму при любой её высоте.
+       Верхний и нижний центральные черепа макета убраны: логотип стоит наверху между черепами, блок короче.
+       --mx, --my, --mw: положение на телефоне (my в процентах ширины от верхнего или нижнего края). -->
+  <section class="register" id="register" aria-labelledby="register-title">
+    <div class="register__decor" aria-hidden="true">
+      <img class="deco skull" src="assets/skull-sm.webp" width="400" height="498" alt="" loading="lazy" decoding="async" style="--cx:10.02;--cy:16.59;--w:15.78;--a:0;--mx:8;--my:16;--mw:28;--d:0s">
+      <img class="deco skull skull--alt" src="assets/skull-alt-sm.webp" width="400" height="509" alt="" loading="lazy" decoding="async" style="--cx:87.97;--cy:19.93;--w:22.06;--a:0;--mx:92;--my:17;--mw:30;--d:-2s">
+      <img class="deco skull only-wide" src="assets/skull-sm.webp" width="400" height="498" alt="" loading="lazy" decoding="async" style="--cx:21.48;--cy:56.84;--w:13.37;--r:-167.8deg;--fy:-1;--a:.5;--d:-6s">
+      <img class="deco skull only-wide" src="assets/skull-sm.webp" width="400" height="498" alt="" loading="lazy" decoding="async" style="--cx:80.51;--cy:57.78;--w:17.59;--r:33.1deg;--fy:-1;--a:.5;--d:-3s">
+      <img class="deco skull" src="assets/skull-sm.webp" width="400" height="498" alt="" loading="lazy" decoding="async" style="--cx:10.21;--cy:87.70;--w:17.59;--r:-54.5deg;--a:1;--mx:14;--my:-15;--mw:28;--d:-5s">
+      <img class="deco skull" src="assets/skull-sm.webp" width="400" height="498" alt="" loading="lazy" decoding="async" style="--cx:89.81;--cy:91.32;--w:17.59;--r:168.3deg;--fy:-1;--a:1;--mx:86;--my:-14;--mw:28;--d:-7s">
+
+      <i class="deco shape shape--lid-b glint only-wide" style="--cx:71;--cy:6.04;--w:9.38;--a:0;--d:.4s"></i>
+      <i class="deco shape shape--cut glint" style="--cx:29.70;--cy:14.15;--w:3.85;--a:0;--mx:36;--my:4;--mw:5;--d:1.2s"></i>
+      <i class="deco shape shape--tri glint" style="--cx:74;--cy:29.26;--w:3.27;--a:0;--mx:63;--my:4;--mw:4.5;--d:2s"></i>
+      <i class="deco shape shape--lid-c glint only-wide" style="--cx:13.14;--cy:43.85;--w:13.28;--a:.5;--d:.8s"></i>
+      <i class="deco shape shape--half-a glint only-wide" style="--cx:91.35;--cy:51.94;--w:2.61;--a:.5;--d:2.6s"></i>
+      <i class="deco shape shape--ring glint only-wide" style="--cx:10.40;--cy:63.17;--w:3.44;--a:.5;--d:1.6s"></i>
+      <i class="deco shape shape--dot glint only-wide" style="--cx:24;--cy:70;--w:1.99;--a:1;--d:3.2s"></i>
+      <i class="deco shape shape--half-b glint only-wide" style="--cx:25;--cy:99;--w:2.82;--a:1;--d:2.2s"></i>
+    </div>
+
+    <div class="register__inner wrap">
+      <header class="register__head" data-reveal>
+        <img class="register__logo" src="assets/poster/logo-big.svg" width="5925" height="2870" alt="Fidelity">
+        <h2 class="register__title" id="register-title">Регистрация гостей</h2>
+        <p class="register__lead">Оставьте контакты, и мы внесём вас в список гостей.</p>
+      </header>
+
+      <div class="card" data-reveal>
+        <form class="form" id="regForm" novalidate>
+          <div class="form__fields">
+            <div class="field field--full">
+              <label class="field__label" for="f-name">ФИО</label>
+              <input class="field__input" id="f-name" name="name" type="text" required maxlength="120" autocomplete="name" autocapitalize="words" enterkeyhint="next" placeholder="Имя и фамилия" aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="f-position">Должность</label>
+              <input class="field__input" id="f-position" name="position" type="text" required maxlength="120" autocomplete="organization-title" autocapitalize="sentences" enterkeyhint="next" placeholder="Например, CMO" aria-describedby="f-position-err">
+              <p class="field__error" id="f-position-err"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="f-company">Компания</label>
+              <input class="field__input" id="f-company" name="company" type="text" required maxlength="120" autocomplete="organization" enterkeyhint="next" placeholder="Где вы работаете" aria-describedby="f-company-err">
+              <p class="field__error" id="f-company-err"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="f-phone">Номер телефона</label>
+              <input class="field__input" id="f-phone" name="phone" type="tel" required maxlength="22" inputmode="tel" autocomplete="tel" enterkeyhint="next" placeholder="+998 (90) 123-45-67" aria-describedby="f-phone-err">
+              <p class="field__error" id="f-phone-err"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="f-telegram">Telegram <span class="field__opt">(если есть ник)</span></label>
+              <div class="field__control">
+                <span class="field__prefix" aria-hidden="true">@</span>
+                <input class="field__input" id="f-telegram" name="telegram" type="text" maxlength="64" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="username" aria-describedby="f-telegram-err">
+              </div>
+              <p class="field__error" id="f-telegram-err"></p>
+            </div>
+
+            <fieldset class="field field--full choice" aria-describedby="f-attendance-err">
+              <legend class="field__label">Вы придёте?</legend>
+              <div class="choice__options">
+                <label class="choice__option">
+                  <input class="sr-only" type="radio" name="attendance" value="yes" required>
+                  <span class="choice__box"><i class="shape shape--bullet-1" aria-hidden="true"></i>Приду</span>
+                </label>
+                <label class="choice__option">
+                  <input class="sr-only" type="radio" name="attendance" value="no">
+                  <span class="choice__box"><i class="shape shape--cut" aria-hidden="true"></i>Не смогу</span>
+                </label>
+              </div>
+              <p class="field__error" id="f-attendance-err"></p>
+            </fieldset>
+          </div>
+
+          <!-- Ловушка для ботов: человек это поле не видит и не заполняет -->
+          <div class="form__trap" aria-hidden="true">
+            <label for="f-website">Сайт</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <p class="form__alert" id="regAlert" role="alert" hidden></p>
+
+          <button class="btn btn--block form__submit" type="submit" data-label-yes="Внести в список" data-label-no="Отправить ответ">Внести в список</button>
+          <p class="form__note">Данные нужны только для списка гостей и связи по вечеринке.</p>
+        </form>
+
+        <div class="result" id="regResult" tabindex="-1" hidden>
+          <div class="result__view" data-view="yes">
+            <i class="shape shape--bullet-1 result__icon" aria-hidden="true"></i>
+            <h3 class="result__title">Вы в списке гостей</h3>
+            <p class="result__text">До встречи 29 октября в 19:30, Nukus 89. Дресс-код: костюмы на Хэллоуин или одежда в чёрном и красном.</p>
+            <div class="result__actions">
+              <a class="btn btn--ghost" id="calLink" href="#" target="_blank" rel="noopener">В календарь</a>
+              <a class="btn btn--ghost" href="https://yandex.uz/maps/?text=%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9D%D1%83%D0%BA%D1%83%D1%81%2C%2089" target="_blank" rel="noopener">Открыть карту</a>
+            </div>
+          </div>
+          <div class="result__view" data-view="no">
+            <i class="shape shape--cut result__icon" aria-hidden="true"></i>
+            <h3 class="result__title">Жаль, что без вас</h3>
+            <p class="result__text">Спасибо, что предупредили. Если планы изменятся, отправьте форму ещё раз, мы обновим ответ.</p>
+          </div>
+          <button class="result__again" type="button" id="regAgain">Заполнить ещё раз</button>
+        </div>
+
+        <noscript><p class="form__alert">Чтобы отправить форму, включите JavaScript в браузере.</p></noscript>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <img class="footer__logo" src="assets/poster/logo.svg" width="2661" height="1289" alt="Fidelity">
+    <p>House of Fidelity / Ташкент</p>
+    <p><a href="https://yandex.uz/maps/?text=%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9D%D1%83%D0%BA%D1%83%D1%81%2C%2089" target="_blank" rel="noopener">Nukus 89, открыть карту</a></p>
+    <p><a href="https://www.instagram.com/house.of.fidelity/" target="_blank" rel="noopener">Instagram @house.of.fidelity</a></p>
+  </div>
+</footer>
+</div>
+
+
+<script src="js/config.js" defer></script>
+<script src="js/phone.js" defer></script>
+<script src="js/validators.js" defer></script>
+<script src="js/api.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/page.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
