@@ -168,6 +168,8 @@
         .then(() => {
           store.set({ attendance: payload.attendance, at: Date.now() });
           showResult(payload.attendance);
+          // Событие для пикселя только здесь: сервер подтвердил, что заявка записана
+          if (FDL.analytics) FDL.analytics.registered(payload.attendance);
         })
         .catch((err) => {
           console.error('Регистрация не отправлена:', err);
