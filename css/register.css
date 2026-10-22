@@ -124,14 +124,10 @@ body{margin:0;background:var(--bg)}
 .register__logo{width:52cqw;max-width:420px;height:auto;margin:0 auto}
 .register__title{margin-top:28px;font:800 13px/1.3 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
 .register__lead{margin-top:14px;font-size:18px;line-height:1.45;color:var(--text)}
-/* Что ждёт гостей: короткий список фигурами бренда, в одну строку */
-.perks{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin-top:18px;font:700 15px/1.3 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
-.perks li{display:flex;align-items:center;gap:10px}
-.perks .shape{--s:14px;--c:var(--red)}
-.perks--form{display:none}
-.perks--hero{align-self:flex-start;justify-content:flex-start;gap:6px 20px;margin-top:12px;font:500 12.5px/1.4 var(--f-body);letter-spacing:0;text-transform:none;color:var(--text)}   /* как дресс-код */
-.perks--hero li{gap:8px}
-.perks--hero .shape{--s:10px}
+/* Что ждёт гостей: под дресс-кодом и тем же шрифтом, вместо точек красные фигуры бренда */
+.perks{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:12px;font:500 12.5px/1.4 var(--f-body);color:var(--text)}
+.perks li{display:flex;align-items:center;gap:8px}
+.perks .shape{--s:10px;--c:var(--red)}
 
 .card{position:relative;max-width:660px;margin:32px auto 0;padding:28px 20px 24px;background:var(--bg);border:1px solid var(--line)}
 
@@ -222,7 +218,6 @@ body{margin:0;background:var(--bg)}
   .field--full{grid-column:1/-1}
   .pp--intro{font-size:19px}
   .register__lead{font-size:20px}
-  .perks--form{font-size:16px}
 }
 
 /* 12. Десктоп: первый экран собран как левый постер, блок формы как правый */
@@ -239,8 +234,9 @@ body{margin:0;background:var(--bg)}
   .hero__skull{position:absolute;left:77.77%;top:22.29%;width:63.42%;height:116.79%;transform:translate(-50%,-50%) rotate(-1.6deg);-webkit-mask-image:none;mask-image:none}
 
   .hero{padding-bottom:96px}
-  .perks--hero{display:none}
-  .perks--form{display:flex}
+  /* Под дресс-кодом постера: тот же левый край, кегль как у кривых дресс-кода (в долях ширины постера) */
+  .perks{position:absolute;left:66.83%;top:97%;margin:0;gap:0 1.6em;font-size:calc(var(--stage-w) * .0136)}
+  .perks .shape{--s:.8em}
   .scroll-cue{position:absolute;left:50%;top:calc(100% + 18px);margin:0;transform:translateX(-50%)}
 
   /* --k: 1% ширины, но не больше 14px, чтобы на широких экранах черепа не росли выше формы */
