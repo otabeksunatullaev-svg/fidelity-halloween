@@ -78,7 +78,7 @@ body{margin:0;background:var(--bg)}
 
 /* Череп на телефоне: высота 64% экрана, низ картинки на 3,9% ниже подбородка, поэтому подбородок совпадает с низом блока даты.
    Слева он начинается так, чтобы челюсть (21% ширины черепа от его края) не заходила на дату шириной 48,49 мм макета */
-.hero__art{position:absolute;z-index:-1;top:auto;bottom:-2.49vh;bottom:-2.49svh;left:calc(48.49 * var(--u) + 24px - 10.8vh);left:calc(48.49 * var(--u) + 24px - 10.8svh);height:64vh;height:64svh;pointer-events:none;will-change:transform}
+.hero__art{position:absolute;z-index:-1;top:auto;bottom:-2.49vh;bottom:-2.49svh;left:calc(48.49 * var(--u) + 44px - 10.8vh);left:calc(48.49 * var(--u) + 44px - 10.8svh);height:64vh;height:64svh;pointer-events:none;will-change:transform}
 .hero__skull{height:100%;width:auto;max-width:none;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 34%);mask-image:linear-gradient(to bottom,transparent 0,#000 34%)}
 
 .hero__head{display:flex;flex-direction:column;align-items:center;min-height:100vh;min-height:100svh;padding:calc(28px + env(safe-area-inset-top,0px)) var(--gutter) calc(var(--cue-gap) + env(safe-area-inset-bottom,0px))}
@@ -124,6 +124,14 @@ body{margin:0;background:var(--bg)}
 .register__logo{width:52cqw;max-width:420px;height:auto;margin:0 auto}
 .register__title{margin-top:28px;font:800 13px/1.3 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
 .register__lead{margin-top:14px;font-size:18px;line-height:1.45;color:var(--text)}
+/* Что ждёт гостей: короткий список фигурами бренда, в одну строку */
+.perks{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin-top:18px;font:700 15px/1.3 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+.perks li{display:flex;align-items:center;gap:10px}
+.perks .shape{--s:14px;--c:var(--red)}
+.perks--form{display:none}
+.perks--hero{align-self:flex-start;justify-content:flex-start;gap:6px 20px;margin-top:12px;font:500 12.5px/1.4 var(--f-body);letter-spacing:0;text-transform:none;color:var(--text)}   /* как дресс-код */
+.perks--hero li{gap:8px}
+.perks--hero .shape{--s:10px}
 
 .card{position:relative;max-width:660px;margin:32px auto 0;padding:28px 20px 24px;background:var(--bg);border:1px solid var(--line)}
 
@@ -214,6 +222,7 @@ body{margin:0;background:var(--bg)}
   .field--full{grid-column:1/-1}
   .pp--intro{font-size:19px}
   .register__lead{font-size:20px}
+  .perks--form{font-size:16px}
 }
 
 /* 12. Десктоп: первый экран собран как левый постер, блок формы как правый */
@@ -230,6 +239,8 @@ body{margin:0;background:var(--bg)}
   .hero__skull{position:absolute;left:77.77%;top:22.29%;width:63.42%;height:116.79%;transform:translate(-50%,-50%) rotate(-1.6deg);-webkit-mask-image:none;mask-image:none}
 
   .hero{padding-bottom:96px}
+  .perks--hero{display:none}
+  .perks--form{display:flex}
   .scroll-cue{position:absolute;left:50%;top:calc(100% + 18px);margin:0;transform:translateX(-50%)}
 
   /* --k: 1% ширины, но не больше 14px, чтобы на широких экранах черепа не росли выше формы */
